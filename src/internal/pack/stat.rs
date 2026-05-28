@@ -1,16 +1,9 @@
-use std::{
-    fs::File,
-    io::{Read},
-    path::Path,
-};
+use std::{fs::File, io::Read, path::Path};
 
 use crate::{
     errors::GitError,
     hash::get_hash_kind,
-    internal::{
-        object::types::ObjectType,
-        pack::Pack,
-    },
+    internal::{object::types::ObjectType, pack::Pack},
 };
 
 #[derive(Debug, Default, PartialEq, Eq)]
